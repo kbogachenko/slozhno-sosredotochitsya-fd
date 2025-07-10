@@ -16,10 +16,119 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  grid-template-columns: 1fr;
   position: relative;
-  align-items: center;
-  height: 100vh;
-  min-height: 668px;
+  min-block-size: 100vh;
   font: inherit;
+  padding: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  margin-top: 75px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-self: end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  font: inherit;
+  min-height: 26px;
+  padding: 0 13px;
+  color: #FF0070;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid #FF0070;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid #FF0070;
+}
+
+.header__theme-menu-button:hover {
+  border: solid 1px rgba(255, 0, 112, 0.40);
+  cursor: pointer;
+}
+
+.decorative__element {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  margin-right: 19px;
+  margin-top: 10px;
+  align-items: center;
+  color: #ff0070;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.decorative__element::after {
+  display: block;
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: #ff0070;
+  fill: #ff0070;
+  filter: drop-shadow(0px 2px 4px #ff0070);
+}
+
+.header__title {
+  font-weight: 700px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: #DB00ff;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 #FF0070;
+  margin: 10px;
+}
+
+.title-decor {
+  font-weight: 700;
+  background-color: #ff0070;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #000028;
+}
+
+.header__text {
+  max-inline-size: 355px;
+  max-block-size: 117px;
+  justify-self: end;
+  align-self: center;
+}
+
+.corner::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 10px;
+}
+
+.corner::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-left: 1px solid #ff0070;
+  border-bottom: 1px solid #ff0070;
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 10px;
 }
