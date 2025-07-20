@@ -7,7 +7,7 @@
   background-color: var(--bg-color);
   background-attachment: fixed;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--main-font, "IBM Plex mono"), sans-serif;
   font-size: var(--main-font-size, 1.125rem);
@@ -223,7 +223,7 @@
 .footer__title {
   font-size: 116px;
   color: var(--title-decor);
-  weight: 700;
+  font-weight: 700;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
