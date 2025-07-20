@@ -44,12 +44,12 @@
   --hover-color: rgba(50, 49, 50, 0.4);
   }
 
-.theme-light .page {
+.page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   --bg-image: url('../images/cover-image-light.png');
 }
 
-.theme-light .decorative__element {
+.decorative__element {
   visibility: hidden;
 }
 }
